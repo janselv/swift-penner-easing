@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 struct Bounce{
     static var EaseIn :Easing    = { (t,b,c,d) -> CGFloat in

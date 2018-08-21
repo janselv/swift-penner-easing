@@ -7,17 +7,18 @@
 //
 
 import Foundation
+import UIKit
 
 struct Sine{
     static var EaseIn :Easing    = { (_t,b,c,d) -> CGFloat in
-        return -c * cos(_t/d * (CGFloat(M_PI)/2)) + c + b
+        return -c * cos(_t/d * (CGFloat.pi/2)) + c + b
     }
     
     static var EaseOut :Easing   = { (_t,b,c,d) -> CGFloat in
-        return c * sin(_t/d * (CGFloat(M_PI)/2)) + b
+        return c * sin(_t/d * (CGFloat.pi/2)) + b
     }
     
     static var EaseInOut :Easing = { (_t,b,c,d) -> CGFloat in
-        return -c/2 * (cos(CGFloat(M_PI)*_t/d) - 1) + b
+        return -c/2 * (cos(CGFloat.pi*_t/d) - 1) + b
     }
 }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Linear{
     static var EaseIn :Easing    = { (t,b,c,d) -> CGFloat in

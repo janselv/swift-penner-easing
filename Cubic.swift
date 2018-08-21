@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 struct Cubic{
     static var EaseIn :Easing    = { (_t,b,c,d) -> CGFloat in

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Circ{
     static var EaseIn :Easing    = { (_t,b,c,d) -> CGFloat in
